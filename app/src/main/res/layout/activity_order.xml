@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/White"
+    tools:context="com.example.android.rifqyirsyadputra_1202152176_modul2.ActivityOrder">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/logo"
+        android:id="@+id/img_logo" />
+
+    <TextView
+        android:id="@+id/pilih_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/img_logo"
+        android:layout_alignRight="@+id/img_logo"
+        android:layout_below="@+id/img_logo"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="26dp"
+        android:text="Pilih Order:"
+        android:textSize="20sp" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal">
+
+        <RadioButton
+            android:id="@+id/rbt_DineIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dine In" />
+
+        <RadioButton
+            android:id="@+id/rbt_TakeAway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Take Away" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btn_Order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/Black"
+        android:onClick="onClickOrder"
+        android:padding="5dp"
+        android:text="PESAN SEKARANG"
+        android:textColor="@color/White" />
+
+</LinearLayout>
